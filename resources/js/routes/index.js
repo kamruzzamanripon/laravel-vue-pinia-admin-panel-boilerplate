@@ -2,10 +2,10 @@ import { createRouter, createWebHistory } from "vue-router";
 import AuthLayout from "../components/layouts/AuthLayout.vue";
 import DefaultLayout from "../components/layouts/DefaultLayout.vue";
 import Page404 from "../views/PageNotFound.vue";
+import About from "../views/about/About.vue";
 import Login from "../views/auth/Login.vue";
 import Register from "../views/auth/Register.vue";
-import About from "../views/home/About.vue";
-import Home from "../views/home/Home.vue";
+import Dashboard from "../views/dashboard/Dashboard.vue";
 
 
 
@@ -14,14 +14,12 @@ import Home from "../views/home/Home.vue";
 
 
 const routes = [
-    // { path: '/about', name: "About", component: About },
-    // { path: '/', name: "Home", component: Home },
     {
         path: "/",
-        redirect: "/home",
+        redirect: "/dashboard",
         component: DefaultLayout,
         children: [
-           { path: "/home", name: "Home", component: Home },
+           { path: "/dashboard", name: "Dashboard", component: Dashboard,  meta: { title: "Dashboard" } },
            { path: '/about', name: "About", component: About },
         ],
     },
@@ -62,9 +60,18 @@ const routes = [
     },
 ];
 
+
+
 const router = createRouter( {
     history: createWebHistory(),
     routes,
 } );
+
+// Update the document title on each route change
+router.beforeEach((to, from, next) => {
+    document.title = to.meta.title || 'Kamruzzaman';
+    next();
+  });
+
 
 export default router;

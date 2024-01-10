@@ -18,21 +18,21 @@
         <nav class="relative">
             
             <SidebarItem
-                to="Home"
+                to="Dashboard"
                 class="group relative"
                 :class="{
                     ['router-link-active router-link-exact-active']:
-                        $route.path.match('home') !== null,
+                        $route.path.match('dashboard') !== null,
                 }"
             >
                 <CompanyIcon class="w-10 h-10 fill-white" />
                 <span class="group-hover:opacity-100 transition-opacity bg-gray-800 px-3 text-sm text-gray-100 rounded-md absolute left-1/2 -translate-x-1/2 translate-y-full opacity-0 m-4 mx-auto"
                 v-if="!showSideBar"
-                >home</span>
+                >Dashboard</span>
                 <span
                     class="sidebar-item text-white"
                     :class="[showSideBar ? 'block' : 'hidden']"
-                    >home</span
+                    >Dashboard</span
                 >
             </SidebarItem>
 

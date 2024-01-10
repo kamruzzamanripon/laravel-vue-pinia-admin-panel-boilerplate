@@ -6,15 +6,15 @@
     >
         <nav class="mt-[80px]">
             <SidebarItem
-                to="Home"
+                to="Dashboard"
                 :class="{
                     ['router-link-active router-link-exact-active']:
-                        $route.path.match('home') !== null,
+                        $route.path.match('dashboard') !== null,
                 }"
                 @click="toggleSidebar"
             >
                 <CompanyIcon class="w-10 h-10 fill-white text-light-grey" />
-                <span class="sidebar-item text-gray-100">home </span>
+                <span class="sidebar-item text-gray-100">Dashboard </span>
             </SidebarItem>
 
             <SidebarItem

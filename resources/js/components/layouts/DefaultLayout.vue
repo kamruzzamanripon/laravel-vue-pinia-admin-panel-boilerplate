@@ -10,7 +10,7 @@
                 @click="toggleSidebar"
             />
             <div class="cursor-pointer">
-                <router-link :to="{ name: 'Home' }">
+                <router-link :to="{ name: 'Dashboard' }">
                     <img
                         src="../../assets/coffeeLogo.png"
                         class="h-8"
