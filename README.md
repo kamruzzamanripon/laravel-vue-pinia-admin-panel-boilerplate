@@ -59,4 +59,4 @@
 2. composer install / update
 3. npm intall
 4. npm run dev / npm run build
-3. php artisna serve
+3. php artisan serve
