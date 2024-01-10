@@ -2,11 +2,11 @@
 
 
 ## Features
-- Vue
+- Vue-3
 - Vue Router 
 - Pinia Store
 - Tailwind Css
-- Image Link provide as a url.
+- laravel- 10.10,
 - & Others include
 
 
@@ -30,6 +30,26 @@
 
 ### Mobile View and Menu Extended
 ![Mobile View](/public/screenshort/dashboard-4.jpg)
+
+
+## Login Page
+
+### Desktop View and Menu Unextended
+![Desktop View](/public/screenshort/login_page.jpg)
+
+
+### Desktop View and Menu Extended
+![Mobile View](/public/screenshort/login_page_mobile.jpg)
+
+
+## Registration Page
+
+### Desktop View and Menu Unextended
+![Desktop View](/public/screenshort/register.jpg)
+
+
+### Desktop View and Menu Extended
+![Mobile View](/public/screenshort/login_page_mobile.jpg)
 
 
 
