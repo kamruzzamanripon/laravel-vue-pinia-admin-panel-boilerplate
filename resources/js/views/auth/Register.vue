@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen flex items-center justify-center bg-gray-100">
+    <div class="min-h-[85%] flex items-center justify-center bg-gray-100">
       <div class="bg-white p-8 rounded shadow-md">
         <h1 class="text-2xl font-semibold mb-6">Register Page</h1>
         

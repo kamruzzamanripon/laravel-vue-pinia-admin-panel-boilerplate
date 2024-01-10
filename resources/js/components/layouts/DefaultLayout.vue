@@ -6,7 +6,7 @@
             class="bg-gray-700 py-4 px-4 text-light-grey flex justify-between items-center fixed left-0 right-0 z-10"
         >
             <ToggleIcon
-                class="my-1 w-6 h-6 sm:w-7 sm:h-7 text-light-grey bg-dark-blue cursor-pointer md:hidden"
+                class="my-1 w-6 h-6 sm:w-7 sm:h-7 text-gray-100 bg-dark-blue cursor-pointer md:hidden"
                 @click="toggleSidebar"
             />
             <div class="cursor-pointer">
@@ -72,11 +72,11 @@ const basicStoreInfo = basicStore();
 const toggleSidebar =()=>{
     basicStoreInfo.showSideBar = !basicStoreInfo.showSideBar;
 }
+const logout =()=>{
+    alert("hello Ripon");
+}
 
 const showSideBar = computed(() => basicStoreInfo.showSideBar)
-
-
-
 
 </script>
 
