@@ -1,8 +1,8 @@
 <template>
     <!-- mobile side bar -->
     <div
-        class="fixed bg-gray-600 h-screen w-full z-10 md:hidden -top-[900px] transition-all duration-500 ease-in-out"
-        :class="[!showSideBar ? '-top-[0px] sm:70px block' : '']"
+        class="fixed bg-gray-600 h-screen w-full z-10 md:hidden  transition-all duration-500 ease-in-out"
+        :class="[showSideBar ? '-top-[1px] sm:70px block' : '-top-[900px]']"
     >
         <nav class="mt-[80px]">
             <SidebarItem
@@ -36,10 +36,10 @@
 </template>
 
 <script setup>
+import { computed } from 'vue';
+import { basicStore } from '../../store/basicStore';
 import CompanyIcon from "../icons/CompnayIcon.vue";
 import SidebarItem from "./SidebarItem.vue";
-import { computed, ref } from 'vue';
-import { basicStore } from '../../store/basicStore';
 
 const basicStoreInfo = basicStore();
 
